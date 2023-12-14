@@ -399,7 +399,9 @@ animation: fadeInUp 0.5s ease-in-out;
   font-weight: 300;
 }
 
-
+.mobile-only{
+  @media screen and (max-width: 768px){display: none;}
+}
 
 /* for animation we are gonna use keyframes  */
 
@@ -447,7 +449,9 @@ animation: fadeInUp 0.5s ease-in-out;
 
 @media (max-width: 960px) {
   /* hide desktop */
-  
+  .mobile-only{
+    display: block;
+  }
 
   .section-inner-center h3{
     font-size:  75px;
@@ -457,7 +461,7 @@ animation: fadeInUp 0.5s ease-in-out;
 
 @media (max-width: 600px) {
   .desktop-main-menu ul li{
-    display: none;
+    display: none; 
   }
   
   .section-inner {
